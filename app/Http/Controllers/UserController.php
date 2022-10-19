@@ -88,8 +88,8 @@ class UserController extends Controller
     public function update(UpdateUser $request, User $user)
     {
         if($request->hasFile('avatar')) {
-            $path = $request->file('avatar')->store('avatars');
-
+            $path = $request->file('avatar')->store('public/avatars');
+            
             if($user->image) {
                 $user->image->path = $path;
                 $user->image->save();
@@ -100,7 +100,7 @@ class UserController extends Controller
             }
         }
 
-         $user->locale = $request->get('locale');
+         $user->local = $request->get('local');
          $user->save();
         return redirect()
         ->back()
