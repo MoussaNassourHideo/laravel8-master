@@ -4,9 +4,10 @@
 
 @section('content')
 
-<form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data">
+<form action="{{ route('posts.store') }}" method="POST" enctype="multipart/form-data" class="mt-2">
     @csrf
     @include('posts.partials.form')
-    <div><input type="submit" value="Create" class="btn btn-primary btn-block"></div>
+    <div class="mt-2">
+        <input type="submit" value="Create" class="btn btn-primary btn-block mt-2"></div>
 </form>
 @endsection
