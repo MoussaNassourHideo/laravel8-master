@@ -26,8 +26,14 @@
 
     
     <p>{{ $post->content }}</p>
-
-     <img src=" {{ $post->image->url() }}" />
+        
+       @if ( $post->image)
+       <img src=" {{ $post->image->url() }}" />
+       @else
+       
+       <div>NO Photo</div>
+       @endif
+     
 
      @updated(['date' => $post->created_at, 'name' => $post->user->name])
      @endupdated 
