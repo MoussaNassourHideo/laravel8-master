@@ -100,7 +100,8 @@ class UserController extends Controller
             }
         }
 
-         $user->local = $request->get('local');
+         $user->local = $request->locale;
+         $user->name = $request->name ;
          $user->save();
         return redirect()
         ->back()
