@@ -42,6 +42,6 @@
     <input name = "password_confirmation"  required class="form-control" type="password"/>
 </div>
 
-<button type="submit" class="btn btn-primary btn-block">Register!</button>
+<button type="submit" class="btn btn-primary btn-block mt-3">Register!</button>
 </form>
 @endsection('content')
