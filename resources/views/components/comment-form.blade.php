@@ -4,7 +4,7 @@
               @csrf
         
              <div class="form-group">
-                  <textarea type="text" class="form-control"  name="content" ></textarea>
+                  <textarea type="text" class="form-control"  name="content" required></textarea>
             </div>
            <div class="mt-4"><input type="submit"  class="btn btn-primary btn-block">  Add comment</div>
           </form>
