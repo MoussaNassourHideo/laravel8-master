@@ -25,7 +25,7 @@
 
 
     
-    <p>{{ $post->content }}</p>
+    <p>{!! $post->content !!}</p>
         
        @if ( $post->image)
        <img src=" {{ $post->image->url() }}" />

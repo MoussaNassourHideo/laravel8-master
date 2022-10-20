@@ -8,7 +8,7 @@
 
 <div class="form-group">
     <label for="content">Content</label>
-    <textarea class="form-control" id="content" name="content" >{{ old('content' , optional($post ?? null)->content) }} </textarea>
+    <textarea class="form-control" id="content" name="content" >{!! old('content' , optional($post ?? null)->content) !!} </textarea>
 </div>
 
 <div class="form-group mt-4">
